@@ -1,7 +1,7 @@
 import uuid
 
 
-class Tile:
+class Tile(object):
     numbers = []
     tile_id = 0
 
@@ -24,7 +24,7 @@ class Tile:
         return x
 
 
-class Board:
+class Board(object):
     def __init__(self, tiles=[], valid_tiles=[], v=True):
         self.tiles = tiles
         self.valid_tiles = set(valid_tiles)
